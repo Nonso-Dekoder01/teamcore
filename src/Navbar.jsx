@@ -119,6 +119,11 @@ const Navbar = () => {
             Education
           </NavLink>
         </li>
+
+        {/* Contact Button */}
+        <button className="w-full px-6 py-3 bg-none border-2 font-semibold border-[#FF6600] text-md text-[#FF6600] rounded-lg hover:bg-[#FF6600] hover:text-[#ffffff] hover:border-none transition-all duration-500">
+          Contact Us
+        </button>
       </ul> : ""}
 
       <div className="flex items-center relative gap-6 xl:hidden">
