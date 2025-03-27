@@ -12,7 +12,7 @@ const Navbar = () => {
   }
 
   return (
-    <nav className="w-full h-auto flex justify-between items-center px-7 md:px-16 lg:px-32 py-5">
+    <nav className="w-full h-auto bg-white flex justify-between items-center px-7 md:px-16 lg:px-32 py-5">
       {/* Logo */}
       <div>
         <img src={logo} alt="Teamcore Logo" className="w-40 h-16" />
@@ -32,7 +32,7 @@ const Navbar = () => {
             Home
           </NavLink>
         </li>
-        <li>
+        {/* <li>
           <NavLink
             to="/about"
             className={({ isActive }) =>
@@ -43,7 +43,7 @@ const Navbar = () => {
           >
             About Us
           </NavLink>
-        </li>
+        </li> */}
         <li>
           <NavLink
             to="/services"
@@ -70,7 +70,7 @@ const Navbar = () => {
         </li>
       </ul>
 
-      {show ? <ul className="lg:hidden flex flex-col text-md md:text-lg absolute top-20 md:top-24 left-0 gap-[40px] py-7 md:py-10 px-7 md:px-16 bg-white w-full h-full transition-all duration-500">
+      {show ? <ul className="lg:hidden flex flex-col text-md md:text-lg absolute top-20 md:top-24 left-0 gap-[40px] py-7 md:py-10 px-7 md:px-16 bg-white z-10 w-full h-screen overflow-y-hidden transition-all duration-500">
         <li>
           <NavLink
             to="/"
@@ -83,7 +83,7 @@ const Navbar = () => {
             Home
           </NavLink>
         </li>
-        <li>
+        {/* <li>
           <NavLink
             to="/about"
             className={({ isActive }) =>
@@ -94,7 +94,7 @@ const Navbar = () => {
           >
             About Us
           </NavLink>
-        </li>
+        </li> */}
         <li>
           <NavLink
             to="/services"
