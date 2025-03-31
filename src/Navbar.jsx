@@ -11,6 +11,8 @@ const Navbar = () => {
   setShow(!show)
   }
 
+  
+
   return (
     <nav className="w-full h-auto bg-white flex justify-between items-center px-7 md:px-16 lg:px-32 py-5">
       {/* Logo */}
